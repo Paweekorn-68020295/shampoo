@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>สินค้าทั้งหมด — Body Scent</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="brand-logo">Body Scent</a>
+      <nav class="nav-links">
+        <a href="index.html">หน้าแรก</a>
+        <a href="product.html" class="active">สินค้าทั้งหมด</a>
+        <a href="order.html">สั่งซื้อสินค้า</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Product Catalog Section -->
+  <main class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">The Collection</span>
+        <h1>ผลิตภัณฑ์ทั้งหมด</h1>
+        <div class="divider-gold"></div>
+        <p>เลือกกลิ่นหอมที่ตรงกับอารมณ์และสไตล์ของคุณ</p>
+      </div>
+
+      <!-- Filter Bar (Managed by script.js) -->
+      <div id="filter-bar" class="filter-bar">
+        <button type="button" class="filter-btn active" data-mood="all">ทั้งหมด</button>
+        <button type="button" class="filter-btn" data-mood="fresh">
+          <span class="mood-dot mood-dot--fresh"></span> Fresh
+        </button>
+        <button type="button" class="filter-btn" data-mood="sweet">
+          <span class="mood-dot mood-dot--sweet"></span> Sweet
+        </button>
+        <button type="button" class="filter-btn" data-mood="confident">
+          <span class="mood-dot mood-dot--confident"></span> Confident
+        </button>
+        <button type="button" class="filter-btn" data-mood="romance">
+          <span class="mood-dot mood-dot--romance"></span> Romance
+        </button>
+      </div>
+
+      <!-- Product List Grid (Rendered by script.js) -->
+      <div id="product-list" class="product-grid"></div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-logo">Body Scent</div>
+      <p>กลิ่นหอมที่สะท้อนตัวตนและอารมณ์ของคุณในทุกวัน</p>
+      <div class="footer-copy">
+        &copy; 2026 Body Scent. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

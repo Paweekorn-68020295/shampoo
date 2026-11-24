@@ -1,0 +1,22 @@
+[
+  {
+    "id": "BS-001",
+    "name": "ยาสระผม Fresh ใหญ่",
+    "mood": "fresh",
+    "type": "spray",
+    "size": "100ml",
+    "price": 199,
+    "image": "images/fresh.jpg",
+    "description": "กลิ่นหอมสดชื่น สะอาด มีชีวิตชีวา ให้ความรู้สึกเย็นสบายและมั่นใจตลอดทั้งวัน"
+  },
+  {
+    "id": "BS-002",
+    "name": "ยาสระผม Sweet ใหญ่",
+    "mood": "sweet",
+    "type": "spray",
+    "size": "100ml",
+    "price": 199,
+    "image": "images/sweet.jpg",
+    "description": "กลิ่นหอมหวานละมุน น่าทะนุถนอม ให้ความรู้สึกอ่อนโยนและมีเสน่ห์น่าหลงใหล"
+  }
+]

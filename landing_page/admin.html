@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>จัดการคำสั่งซื้อ — Body Scent Admin</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .table-responsive {
+      width: 100%;
+      overflow-x: auto;
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-light);
+    }
+
+    .orders-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.9rem;
+    }
+
+    .orders-table thead {
+      background-color: var(--bg-secondary);
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .orders-table th {
+      padding: 1.15rem 1.25rem;
+      font-family: var(--font-sans);
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-primary);
+      white-space: nowrap;
+    }
+
+    .orders-table td {
+      padding: 1.15rem 1.25rem;
+      border-bottom: 1px solid var(--border-light);
+      color: var(--text-secondary);
+      vertical-align: top;
+    }
+
+    .orders-table tbody tr:last-child td {
+      border-bottom: none;
+    }
+
+    .orders-table tbody tr:hover {
+      background-color: rgba(243, 239, 234, 0.45);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="brand-logo">Body Scent</a>
+      <nav class="nav-links">
+        <a href="index.html">หน้าแรก</a>
+        <a href="product.html">สินค้าทั้งหมด</a>
+        <a href="admin.html" class="active">รายการคำสั่งซื้อ</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Admin Orders Table Section -->
+  <main class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Management</span>
+        <h1>รายการคำสั่งซื้อทั้งหมด</h1>
+        <div class="divider-gold"></div>
+        <p>แสดงรายการสั่งซื้อล่าสุดจากระบบ</p>
+      </div>
+
+      <div class="table-responsive">
+        <table id="ordersTable" class="orders-table">
+          <thead>
+            <tr>
+              <th>วันเวลา</th>
+              <th>ชื่อลูกค้า</th>
+              <th>เบอร์โทร/Line</th>
+              <th>รายการสินค้า</th>
+              <th>จำนวนเงินรวม</th>
+              <th>หมายเหตุ</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-logo">Body Scent</div>
+      <p>กลิ่นหอมที่สะท้อนตัวตนและอารมณ์ของคุณในทุกวัน</p>
+      <div class="footer-copy">
+        &copy; 2026 Body Scent. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
